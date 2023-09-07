@@ -1,9 +1,10 @@
 body{
     height: 100vh;
     margin: 0;
-    background-image: url('https://images.unsplash.com/photo-1550507894-975103845538?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Raleway', sans-serif;
 }
 
 main{
@@ -43,6 +44,11 @@ main{
 }
 
 .displayWeather{
+    color: #12fbe9;
+    text-shadow: -1px 1px 0 #3795ed,
+                          1px 1px 0 #3795ed,
+                         1px -1px 0 #3795ed,
+                        -1px -1px 0 #3795ed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +56,19 @@ main{
     font-family: 'Raleway', sans-serif;
 }
 
+.displayWeather img{
+    width: 100px;
+    height: 100px;
+    margin: -20px;
+}
+
 .displayFutureWeather{
     text-align: center;
     display: flex;
     gap: 10px;
+    color: #fd33fa;
+    text-shadow: -1px 1px 0 #a7038b,
+                          1px 1px 0 #a7038b,
+                         1px -1px 0 #a7038b,
+                        -1px -1px 0 #a7038b;
 }
