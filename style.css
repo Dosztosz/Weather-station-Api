@@ -111,4 +111,12 @@ main {
   font-weight: bolder;
   text-transform: uppercase;
   padding: 10px;
+}
+
+#headline a {
+  text-decoration: none;
+  color: #12fbe9;
+}
+#headline a:hover {
+  color: #d300c4;
 }/*# sourceMappingURL=style.css.map */

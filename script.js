@@ -9,6 +9,7 @@ let feelslike = document.querySelector('.feelslike');
 let image = document.querySelector('img');
 let futureWeather = document.querySelector('.forecast');
 var tbody = document.getElementById('tbody');
+let articlesNum = '';
 const newHour = {};
 
 
@@ -62,11 +63,13 @@ const displayData=(weather)=>{
 // Function to display information on html document
 
 const displayInfo=(articles)=>{
+    for(let j = 0; j <= 19; j++){
+        articlesNum += `<a href="${articles.articles[j].url}"><p>`;
+        articlesNum += articles.articles[j].title;
+        articlesNum += '</p></a>';
+    }
+    document.getElementById('headline').innerHTML = articlesNum;
 
-    let articleTitle = `${articles.articles[0].title}`;
-    let articleUrl = `${articles.articles[0].url}`;
-    document.getElementById('headline').innerHTML = `<a href="${articleUrl}"><h2>`+articleTitle+`</h2></a>`;
-    console.log(articles.totalResults)
 
 }
 
