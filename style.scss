@@ -20,6 +20,7 @@ main{
 }
 
 .container {
+    border: 1px solid #3795ed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,12 +33,13 @@ main{
 }
 
 .programcontainer{
+    border: 1px solid #3795ed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 1em;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     background: rgb(234 234 234);
     background: #000000e2;
     color: white;
@@ -57,9 +59,9 @@ main{
     width: 100%;
     color: #12fbe9;
     text-shadow: -1px 1px 0 #3795ed,
-                          1px 1px 0 #3795ed,
-                         1px -1px 0 #3795ed,
-                        -1px -1px 0 #3795ed;
+                  1px 1px 0 #3795ed,
+                  1px -1px 0 #3795ed,
+                 -1px -1px 0 #3795ed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +75,11 @@ main{
     margin: -20px;
 }
 
+.displayFutureWeather{
+    width: 100%;
+}
 .displayFutureWeather table{
+    width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-collapse: collapse;
     user-select: none;
@@ -88,7 +94,7 @@ main{
     padding: 1rem;
 }
 
-.displayFutureWeather table .neonheader td{
+.displayFutureWeather table td{
     padding: 0.5rem;
 }
 

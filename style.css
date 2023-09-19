@@ -19,6 +19,7 @@ main {
 }
 
 .container {
+  border: 1px solid #3795ed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,12 +32,13 @@ main {
 }
 
 .programcontainer {
+  border: 1px solid #3795ed;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 1em;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   background: rgb(234, 234, 234);
   background: rgba(0, 0, 0, 0.8862745098);
   color: white;
@@ -69,7 +71,12 @@ main {
   margin: -20px;
 }
 
+.displayFutureWeather {
+  width: 100%;
+}
+
 .displayFutureWeather table {
+  width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-collapse: collapse;
   -webkit-user-select: none;
@@ -86,7 +93,7 @@ main {
   padding: 1rem;
 }
 
-.displayFutureWeather table .neonheader td {
+.displayFutureWeather table td {
   padding: 0.5rem;
 }
 
