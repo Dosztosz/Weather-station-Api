@@ -18,7 +18,8 @@ const newHour = {};
 function showWeather(){
 
     // Fection data from open weather API
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=5bc8c728be8d4178ba2123115230709&q&q&q&q=Bochnia&days=1&aqi=yes&alerts=yes`)
+    // Please insert api from Weatherapi.com
+    fetch(``)
     .then(response => response.json())
     .then(displayData);
 
