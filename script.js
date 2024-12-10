@@ -16,9 +16,7 @@ const newHour = {};
 function showWeather() {
   // Fection data from open weather API
   // Please insert api from Weatherapi.com
-  fetch(``)
-    .then((response) => response.json())
-    .then(displayData);
+  fetch(``).then((response) => response.json()).then(displayData);
 }
 
 function showInformations() {
